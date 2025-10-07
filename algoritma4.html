@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MathQuest: Petualangan Alj✰bar Ajaib ✨</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 2.5rem;
+      color: #ffda79;
+      text-shadow: 0 0 10px #ffd32a;
+    }
+
+    .menu, .materi, .latihan, .mode {
+      display: none;
+      max-width: 850px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      margin-top: 30px;
+    }
+
+    .active {
+      display: block;
+      animation: fadeIn 0.8s ease;
+    }
+
+    button {
+      margin: 10px;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 15px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #fff;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(37,117,252,0.6);
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #2575fc, #6a11cb);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .question-box {
+      margin: 20px 0;
+      font-size: 1.1rem;
+      text-align: left;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      width: 60%;
+      margin: 10px 0;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      background: #ff7b00;
+    }
+
+    .score {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #ffd32a;
+    }
+
+    .options button {
+      display: block;
+      width: 80%;
+      margin: 8px auto;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 MathQuest: Petualangan Alj✰bar Ajaib 🪐</h1>
+
+  <!-- MENU UTAMA -->
+  <div class="menu active" id="menu">
+    <p>Selamat datang di dunia Alj✰bar Ajaib! ✨</p>
+    <button onclick="showPage('materi')">⋆˚࿔ Materi 𝜗𝜚˚⋆</button>
+    <button onclick="showPage('mode')">⋆˚࿔ Lathan Soal 𝜗𝜚˚⋆</button>
+  </div>
+
+  <!-- HALAMAN MATERI -->
+  <div class="materi" id="materi">
+    <h2>✧˖°. Materi Aljabar SMP</h2>
+    <div style="text-align:left; white-space:pre-line;">
+Aljabar adalah cabang matematika yang mempelajari simbol-simbol matematika dan aturan untuk memanipulasi simbol-simbol ini. Di tingkat SMP, aljabar berfokus pada konsep dasar seperti variabel, konstanta, suku, operasi hitung, dan persamaan linear.
+
+🌟 Konsep Dasar Aljabar
+
+˙⋆✮ Variabel: Simbol yang mewakili nilai yang tidak diketahui. Biasanya dilambangkan dengan huruf seperti x, y, atau a.
+Contoh: Dalam persamaan 2x + 5 = 11, variabelnya adalah x.
+
+˙⋆✮ Konstanta: Nilai tetap atau tidak berubah.
+Contoh: Dalam persamaan 2x + 5 = 11, konstantanya adalah 5 dan 11.
+
+˙⋆✮ Suku: Bagian dari bentuk aljabar yang dipisahkan oleh tanda tambah (+) atau kurang (-).
+Contoh: Dalam 3x² − 4x + 7 terdapat 3 suku.
+
+˙⋆✮ Koefisien: Angka yang menyertai variabel.
+Contoh: Dalam 3x², koefisiennya 3.
+
+˙⋆✮ Suku Sejenis: Suku-suku dengan variabel dan pangkat sama. Bisa dijumlahkan/dikurangkan.
+
+🌟 Operasi Hitung Bentuk Aljabar
+
+𝟙 Penjumlahan & Pengurangan:
+Hanya suku sejenis yang bisa dijumlahkan/dikurangkan.
+Contoh: (5x + 3y) − (2x − 7y) = 5x + 3y - 2x + 7y = 5x - 2x + 3y + 7y = 3x + 10y
+
+𝟚 Perkalian:
+Kalikan koefisien dan jumlahkan pangkat variabel.
+Contoh: (3a) (4a²) = 12a³
+
+𝟛 Pembagian:
+Bagi koefisien dan kurangkan pangkat variabel.
+Contoh: 15x⁵ ÷ 3x² = 5x³
+
+🌟 Persamaan Linear Satu Variabel (PLSV)
+Persamaan dengan satu variabel berpangkat 1.
+Contoh: 4x − 7 = 13 → x=5
+
+🌟 Contoh Soal Operasi Hitung Aljabar
+
+Soal 1: Penjumlahan dan Pengurangan
+Sederhanakan bentuk aljabar berikut: (8a² − 4ab + 3b²) + (−6a² + 7ab − 5b²)
+
+Pembahasan:
+
+Buka kurung dan gabungkan suku-suku yang sejenis.
+8a² − 6a² − 4ab + 7ab + 3b² − 5b²
+ 
+
+Lakukan operasi hitung pada koefisien suku sejenis.
+
+Suku a²: 8 − 6 = 2  → 2a²
+ 
+
+Suku ab: −4 + 7 = 3  → 3ab
+
+Suku b²: 3 − 5 = −2 → −2b²
+ 
+
+Gabungkan hasilnya.
+2a² + 3ab − 2b²
+ 
+Jadi, bentuk sederhananya adalah 2a 
+2a² + 3ab − 2b²
+ .
+
+Soal 2: Perkalian Suku Dua dengan Suku Dua
+Tentukan hasil dari (x + 5) (2x − 3).
+
+Pembahasan:
+Gunakan metode distributif atau FOIL (First, Outer, Inner, Last).
+
+First (Pertama): Kalikan suku pertama dari setiap kurung.
+x × 2x = 2x²
+ 
+Outer (Luar): Kalikan suku terluar.
+x × (−3) = −3x
+
+Inner (Dalam): Kalikan suku terdalam.
+5 × 2x = 10x
+
+Last (Terakhir): Kalikan suku terakhir dari setiap kurung.
+5× (−3) = −15
+Gabungkan semua hasilnya:
+2x² − 3x + 10x − 15
+Sederhanakan suku sejenis:
+2x² + 7x − 15
+Jadi, hasilnya adalah 2x² + 7x − 15.
+
+Contoh Soal Persamaan Linear Satu Variabel
+Soal 3: Persamaan dengan Variabel di Kedua Sisi
+Tentukan nilai y dari persamaan 3y − 5 = y + 7.
+
+Pembahasan:
+
+Kumpulkan suku-suku dengan variabel di satu sisi (misalnya sisi kiri) dan konstanta di sisi lainnya (sisi kanan).
+3y − y = 7 + 5
+
+Lakukan operasi hitung.
+2y = 12
+
+Bagi kedua sisi dengan koefisien y (yaitu 2).
+y = 12 ÷ 2 
+y = 6
+Jadi, nilai y adalah 6.
+
+Soal 4: Penerapan dalam Soal Cerita
+Sebuah persegi panjang memiliki panjang (2x + 3) cm dan lebar (x + 5) cm. Jika kelilingnya adalah 40 cm, tentukan panjang dan lebarnya.
+
+Pembahasan:
+
+Rumus Keliling Persegi Panjang: K = 2×(panjang+lebar)
+
+Masukkan nilai yang diketahui ke dalam rumus.
+40 = 2× [(2x + 3) + (x + 5)]
+
+Selesaikan persamaan.
+
+Sederhanakan yang di dalam kurung:
+40 = 2× (2x + x + 3 + 5)
+40 = 2× (3x + 8)
+
+Kalikan 2 ke dalam kurung:
+40 = 6x + 16
+
+Pindahkan konstanta 16 ke sisi kiri:
+40 − 16 = 6x
+24 = 6x
+
+Bagi kedua sisi dengan 6:
+x = 6 ÷ 24
+x = 4
+
+Hitung panjang dan lebar dengan nilai x.
+
+Panjang = 2x + 3 = 2 (4) + 3 = 8 + 3 = 11 cm
+
+Lebar = x + 5 = 4 + 5 = 9 cm
+Jadi, panjang persegi panjang tersebut adalah 11 cm dan lebarnya 9 cm.
+    </div>
+    <button class="back-btn" onclick="showPage('menu')">Kembali ke Menu</button>
+  </div>
+
+  <!-- PILIH MODE LATIHAN -->
+  <div class="mode" id="mode">
+    <h2>Pilih Mode Latihan</h2>
+    <button onclick="mulaiLatihan('pg')">Pilihan Ganda</button>
+    <button onclick="mulaiLatihan('esai')">Soal Esai</button>
+    <button class="back-btn" onclick="showPage('menu')">Kembali</button>
+  </div>
+
+  <!-- HALAMAN LATIHAN -->
+  <div class="latihan" id="latihan">
+    <h2 id="judulLatihan">Latihan Soal</h2>
+    <div id="quiz"></div>
+    <div class="score" id="score"></div>
+    <button class="back-btn" onclick="showPage('mode')">Kembali</button>
+  </div>
+
+  <script>
+    function showPage(page) {
+      document.querySelectorAll('.menu, .materi, .latihan, .mode').forEach(e => e.classList.remove('active'));
+      document.getElementById(page).classList.add('active');
+    }
+
+    const soalPG = [
+      {q:"Sederhanakan: 5x + 3x", o:["6x","7x","8x","9x"], a:"8x"},
+      {q:"Hitung: (3a) (2a)", o:["5a²","6a²","7a²","8a²"], a:"6a²"},
+      {q:"Hitung: 15x⁵ ÷ 3x²", o:["3x³","5x³","6x²","8x⁴"], a:"5x³"},
+      {q:"Jika 4x − 7 = 13, maka x =", o:["4","5","6","7"], a:"5"},
+      {q:"Sederhanakan: 3 (2x + 5) − 2 (4x − 1)", o:["−2x + 17","2x + 13","4x + 17","−2x + 15"], a:"−2x + 17"},
+      {q:"Koefisien dari 7y² adalah...", o:["7","2","y","14"], a:"7"},
+      {q:"Suku sejenis dari 3x² adalah...", o:["5x²","2x","4x³","x"], a:"5x²"},
+      {q:"Hasil dari (x + 2) (x + 3) adalah...", o:["x² + 5x + 6","x² + 6x + 5","x² + 3x + 6","x² + 2x + 3"], a:"x² + 5x + 6"},
+      {q:"Selesaikan: 2x + 5 = 11", o:["x = 3","x = 4","x = 5","x = 6"], a:"x = 3"},
+      {q:"Suku ketiga dari 2x² − 4x + 7 adalah...", o:["2x²","−4x","7","x"], a:"7"}
+    ];
+
+    const soalEsai = [
+      {q:"Sederhanakan: 4x + 6x", a:"10x"},
+      {q:"Hitung: (5a )(3a²)", a:"15a³"},
+      {q:"Hitung: 18x⁴ ÷ 6x²", a:"3x²"},
+      {q:"Jika 5x − 10 = 20, maka x =", a:"6"},
+      {q:"Sederhanakan: 2 (3x + 4) − (x − 5)", a:"5x + 13"},
+      {q:"Koefisien dari 9y adalah...", a:"9"},
+      {q:"Hasil dari (a + 3) (a + 2) adalah...", a:"a² + 5a + 6"},
+      {q:"Selesaikan: 3x + 4 = 10", a:"2"},
+      {q:"Sederhanakan: (6x − 2x) + 4x", a:"8x"},
+      {q:"Suku sejenis dari 7x² adalah...", a:"x²"}
+    ];
+
+    let mode = "";
+    let index = 0;
+    let skor = 0;
+
+    function mulaiLatihan(selectedMode) {
+      mode = selectedMode;
+      index = 0;
+      skor = 0;
+      document.getElementById('score').textContent = '';
+      showPage('latihan');
+      nextQuestion();
+      document.getElementById('judulLatihan').textContent = selectedMode === 'pg' ? "Latihan Pilihan Ganda" : "Latihan Esai";
+    }
+
+    function nextQuestion() {
+      const quiz = document.getElementById('quiz');
+      let data = mode === 'pg' ? soalPG : soalEsai;
+      if(index < data.length) {
+        if(mode === 'pg') {
+          quiz.innerHTML = `
+            <div class='question-box'>
+              <p><b>Soal ${index+1}:</b> ${data[index].q}</p>
+              <div class='options'>
+                ${data[index].o.map(o=>`<button onclick="cekJawabanPG('${o}')">${o}</button>`).join('')}
+              </div>
+              <div class='result' id='feedback'></div>
+            </div>`;
+        } else {
+          quiz.innerHTML = `
+            <div class='question-box'>
+              <p><b>Soal ${index+1}:</b> ${data[index].q}</p>
+              <input id='answer' placeholder='Jawaban kamu'>
+              <button onclick='cekJawabanEsai()'>Kirim</button>
+              <div class='result' id='feedback'></div>
+            </div>`;
+        }
+      } else {
+        quiz.innerHTML = `<h3>✦ Kuis selesai!</h3>`;
+        document.getElementById('score').textContent = `Skor Akhir Kamu: ${skor} / ${data.length}`;
+      }
+    }
+
+    function cekJawabanPG(pilihan) {
+      const correct = soalPG[index].a;
+      const fb = document.getElementById('feedback');
+      if(pilihan === correct) {
+        fb.innerHTML = "✅ Benar! Hebat!";
+        skor++;
+      } else {
+        fb.innerHTML = `❌ Salah! Jawaban benar: <b>${correct}</b>`;
+      }
+      index++;
+      setTimeout(nextQuestion, 1200);
+    }
+
+    function cekJawabanEsai() {
+      const ans = document.getElementById('answer').value.trim().toLowerCase();
+      const correct = soalEsai[index].a.toLowerCase();
+      const fb = document.getElementById('feedback');
+      if(ans === correct) {
+        fb.innerHTML = "✅ Benar!";
+        skor++;
+      } else {
+        fb.innerHTML = `❌ Salah! Jawaban benar: <b>${soalEsai[index].a}</b>`;
+      }
+      index++;
+      setTimeout(nextQuestion, 1200);
+    }
+  </script>
+</body>
+</html>
